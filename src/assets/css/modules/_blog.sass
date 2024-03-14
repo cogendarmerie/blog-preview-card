@@ -1,0 +1,73 @@
+$blog-preview-card-width: 384px
+$blog-preview-card-height: 522px
+$blog-preview-card-margin: 16px
+$blog-preview-card-border-radius: 20px
+$blog-preview-card-shadow: 8px 8px 0 0 #000
+$blog-preview-card-padding: 24px
+
+.blog-card-preview-wrapper
+    height: $blog-preview-card-height
+    width: $blog-preview-card-width
+    
+    > div
+        display: flex
+        flex-direction: column
+        gap: 24px
+        background-color: $color-white
+        border: 1px solid $color-black
+        border-radius: $blog-preview-card-border-radius
+        box-shadow: $blog-preview-card-shadow
+        padding: $blog-preview-card-padding
+
+.blog-card-preview-picture
+    height: 200px
+    width: 100%
+
+    img
+        width: 100%
+        height: 100%
+        border-radius: 10px
+        object-fit: cover
+        object-position: center
+
+.blog-card-preview-middle-part
+    display: flex
+    flex-direction: column
+    gap: 12px
+
+.blog-card-preview-category
+    padding: 4px 12px
+    background-color: $color-yellow
+    display: inline-block
+    border-radius: 4px
+    @extend .body-s-bold
+
+.blog-card-preview-published
+    @extend .body-s-regular
+
+.blog-card-preview-description p
+    color: $color-gray
+    @extend .body-m
+    margin: 0
+
+.blog-card-preview-author-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 12px
+    color: $color-black
+    font-size: 14px
+    font-weight: 800
+    line-height: 150%
+
+    .blog-card-preview-author-picture
+        height: 32px
+
+        img
+            height: 32px
+            width: 32px
+            border-radius: 100rem
+            object-position: center
+
+    p
+        margin: 0
