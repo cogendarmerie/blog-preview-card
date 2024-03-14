@@ -19,7 +19,7 @@ body {
   font-weight: 500;
 }
 
-.heading, h1 {
+.heading, .blog-card-preview-title, h1 {
   font-size: 24px;
   font-weight: 800;
   line-height: 150%;
@@ -44,6 +44,11 @@ body {
   line-height: 150%;
 }
 
+@media screen and (max-width: 375px) {
+  .heading, .blog-card-preview-title, h1 {
+    font-size: 20px;
+  }
+}
 @font-face {
   font-family: "Figtree";
   font-weight: 500;
@@ -107,6 +112,15 @@ body {
   border-radius: 4px;
 }
 
+.blog-card-preview-title {
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+.blog-card-preview-title:hover {
+  color: hsl(47, 88%, 63%);
+}
+
 .blog-card-preview-description p {
   color: hsl(0, 0%, 50%);
   margin: 0;
@@ -141,4 +155,19 @@ body {
 }
 .blog-card-preview-author-wrapper p {
   margin: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .blog-card-preview-wrapper {
+    width: 327px;
+  }
+  .blog-card-preview-wrapper .blog-card-preview-category {
+    font-size: 12px;
+  }
+  .blog-card-preview-wrapper .blog-card-preview-published {
+    font-size: 12px;
+  }
+  .blog-card-preview-wrapper .blog-card-preview-description p {
+    font-size: 14px;
+  }
 }

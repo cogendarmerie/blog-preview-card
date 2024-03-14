@@ -45,6 +45,14 @@ $blog-preview-card-padding: 24px
 .blog-card-preview-published
     @extend .body-s-regular
 
+.blog-card-preview-title
+    @extend .heading
+    cursor: pointer
+    transition: all .25s ease-in
+
+    &:hover
+        color: $color-yellow
+
 .blog-card-preview-description p
     color: $color-gray
     @extend .body-m
@@ -71,3 +79,18 @@ $blog-preview-card-padding: 24px
 
     p
         margin: 0
+
+
+// Responsive Mobile
+@media screen and ( max-width: $screen-mobile-width )
+    .blog-card-preview-wrapper
+        width: 327px
+
+        .blog-card-preview-category
+            font-size: 12px
+
+        .blog-card-preview-published
+            font-size: 12px
+
+        .blog-card-preview-description p
+            font-size: 14px
